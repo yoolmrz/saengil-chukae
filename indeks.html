@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Rifaldi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Pacifico', cursive;
+        }
+
+        body {
+            background-image: url('https://images.unsplash.com/photo-1517315003714-a071486bd9ea');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 20px;
+        }
+
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            width: 90%;
+            max-width: 800px;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .highlight {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        .text {
+            font-size: 1.4em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            white-space: pre-line;
+        }
+
+        .typing {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid white;
+            animation: typing 4s steps(40) forwards, blink 0.7s infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>Happy Birthday Bro <span class="highlight">Muhammad Rifaldi Nasution</span></h1>
+        <p class="text typing">Muhammad Rifaldi, hari ini adalah hari yang istimewa, hari di mana 28 tahun lalu, engkau hadir ke dunia dengan membawa cahaya tersendiri...
+        
+        Setiap langkah yang kau tempuh sejak 28 Februari 1998 hingga hari ini adalah cerita yang penuh makna. Ada tawa yang mengisi hari-harimu, ada juga air mata yang mengajarkanmu tentang arti kehidupan.
+
+        Tapi lihatlah, kau tetap berdiri tegar, dengan senyuman yang selalu siap menyambut esok. Hari ini, mari kita renungi sejenak perjalananmu, betapa indahnya hidup ini meski terkadang terasa berat...
+        
+        Rifaldi, di ulang tahunmu ini, aku ingin mengucapkan selamat dengan sepenuh hati. Kau pernah merasakan sedih, kecewa, bahkan mungkin merasa sendiri. Tapi ingatlah, setiap tetes air mata yang jatuh adalah bagian dari prosesmu menjadi pribadi yang lebih kuat.
+
+        Kesedihan itu seperti malam yang gelap, tapi setelahnya selalu ada pagi yang cerah. Hari ini, di ulang tahunmu, aku berharap kau bisa melihat betapa berartinya setiap detik yang telah kau lalui, baik yang bahagia maupun yang sedih...
+        
+        Tidak semua hari dalam hidup ini diwarnai oleh kebahagiaan, dan itu tidak apa-apa. Bahagia melihatmu tumbuh menjadi pribadi yang kuat, penuh cinta, dan selalu siap berbagi. Setiap kali kau tersenyum, dunia seakan ikut bersinar.
+
+        Namun, justru itulah yang membuatmu semakin berharga. Kau adalah bukti bahwa kebahagiaan dan kesedihan bisa berjalan beriringan, menciptakan harmoni yang indah dalam hidup...
+
+        Di usia yang ke-28 ini, aku berharap kau terus melangkah dengan penuh keyakinan. Semoga setiap mimpi yang kau rajut perlahan menjadi kenyataan. Semoga kebahagiaan selalu menyertaimu, dan jika suatu hari kesedihan datang lagi, kau bisa melewatinya dengan hati yang tenang.
+
+        Rifaldi, dunia ini lebih indah karena ada dirimu. Teruslah menjadi pribadi yang rendah hati, penuh kasih, dan selalu siap menghadapi tantangan hidup...
+
+        Selamat ulang tahun, Muhammad Rifaldi. Semoga di tahun ini, kau menemukan lebih banyak alasan untuk tersenyum, lebih banyak momen untuk berbahagia, dan lebih banyak kekuatan untuk menghadapi setiap ujian.
+
+        Terima kasih telah menjadi bagian dari kehidupan banyak orang, termasuk aku. Kau adalah anugerah yang tak ternilai, dan hari ini, kita rayakan keberadaanmu dengan penuh syukur. 🎉🎂...
+        </p>
+
+        <audio autoplay loop>
+            <source src="https://www.bensound.com/bensound-music/bensound-birthday.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script>
+        // Menunggu klik pertama untuk mulai musik
+        document.addEventListener('click', function() {
+            document.querySelector('audio').play();
+        });
+    </script>
+</body>
+</html>
